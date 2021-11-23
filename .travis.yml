@@ -1,0 +1,22 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - echo "aa"
+
+script:
+  - echo "bb"
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET"
+  region: "eu-west-1"
+  app: "express-app"
+  env: "Expressapp-env"
+  bucket_name: "elasticbeanstalk-eu-west-1-745665539209"
+  bucket_path: "express-app"
+  on:
+    branch: master

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>This is the title of the webpage!</title>
+  <link rel='stylesheet' href='/css/style.css'>
+  <link rel='icon' href='/images/weather.png'>
+  <script src='/js/app.js' async></script>
+</head>
+
+<body>
+  <div>
+    {{>header}}
+    <form>
+      <label>Enter address:</label>
+      <br>
+      <input type='text'>
+      <br>
+      <input type='submit' >
+    </form>
+    <p id='message-1'></p>
+    <p id='message-2'></p>
+  </div>
+  {{>footer}}
+</body>
+
+</html>

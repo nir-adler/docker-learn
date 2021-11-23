@@ -1,0 +1,23 @@
+
+
+html {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+    min-height: 100%;
+    
+}
+
+header{
+    min-width:300px;
+}
+
+footer{
+    /* align-self: flex-end; */
+}
